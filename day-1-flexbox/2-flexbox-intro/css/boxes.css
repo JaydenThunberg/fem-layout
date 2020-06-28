@@ -5,15 +5,43 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	border: 1px dotted red;
+	border: 5px dotted red;
+	display: flex;
+	/* flex-direction: row;
+	flex-wrap: nowrap; */
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: space-around;
 }
 li {
-	border: 1px solid #999;
+	border: 3px solid #999;
 	margin: 0.5em;
 	padding: 0.5em;
 }
 
+/* .flex2{
+	border: 3px dashed purple;
+	order: 2;
+} */
 
+/* FLEX BASIS */
+.flex2{ 
+	border: 2px dashed purple;
+	order: 2; 
+	flex-basis: 25%;
+	/* Tells children to take up a certain amount of space(25%)(do not use width property) */
+}
+
+/* FLEX GROW/SHRINK */
+.flex2{ 
+	border: 2px dashed purple;
+	order: 2; 
+	flex: 2 1 25%;
+	/* flex: 0 1 25%; (GROW is first property 0, SHRINK is second property 1) */
+	/* GROW is how fast a box expands, 2 = grow these twice the amount as others*/
+	/* SHRINK is how quickly a  */
+	/* flex: G S B; G = flex-grow, S = flex-shrink, B = flex-basis */
+}
 
 
 

@@ -56,5 +56,5 @@ Flex-shrink controls what happens to extra space as elements shrink.  By assigni
 12. .flex2{ border: 2px dotted blue; flex: G S B; }
 G = flex-grow
 S = flex-shrink
-B = flex-basis
+B = flex-basis("width" non absolute, it is flexible)
 This is the shorthand for combining flex-grow, flex-shrink, and flex-basis. 
