@@ -31,13 +31,88 @@ div img {
 }
 
 /* grid system -- mobile first! */
+.row{
+	display: flex;
+	flex-flow: row wrap;
+}
 
+[class*="col-"]{
+	margin-left: 4%;
+	margin-top: 1%;
+	flex: 0 0 92;
+}
+
+.col-1-2,
+.col-1-4 {
+	background-color: rgb(186, 196, 207);
+}
+
+.col-2{
+	background-color: rgb(230, 209, 166);
+}
+
+.col-3{
+	background-color: rgb(179, 199, 154);
+}
+
+.col-4{
+	background-color: rgb(159, 142, 167);
+}
+
+.col-12{
+	background-color: rgb(152, 167, 142);
+}
+
+.col-21{
+	background-color: rgb(167, 143, 142);
+}
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
-
+@media only screen and (min-width: 480px){
+	.col-1-2,
+	.col-2 {
+		flex: 0 0 44%;
+	}
+	.col-1-4,
+	.col-3,
+	.col-4 {
+		flex: 0 0 92%;
+	}
+	.col-12{
+		flex: 0 0 44%;
+	}
+	.col-21{
+		flex: 0 0 92%;
+		order: -1;
+	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.col-1-2,
+	.col-1-4 {
+		flex: 0 0 20%;
+	}
+	.col-2{
+		flex: 0 0 44%;
+	}
+	.col-3{
+		flex: 0 0 68%;
+	}
+	.col-4{
+		flex: 0 0 92%;
+	}
+	.col-12{
+		flex: 0 0 20%;
+	}
+	.col-21{
+		flex: 0 0 44%;
+	}
+	.reverse{
+		flex-direction: row-reverse;
 
+	}
+	.reverse [class*='col-1'] {
+		margin-left: 0%;
+		margin-right: 4%;
+	}
 }
