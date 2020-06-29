@@ -13,6 +13,16 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+}
+li {
+	flex: auto;
+}
+/* This is connecting to the figure tag(block level element). The width also
+allows them to take the space as needed as the page changes size*/
+img {
+	width: 100%;
 }
 @media (min-width: 550px) {
 }
